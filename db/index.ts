@@ -3,10 +3,10 @@ import postgres from 'postgres';
 import * as schema from './schema';
 
 
-const connectionString = process.env.DATABASE_URL;
+const connectionString = process.env.SUPABASE_URL;
 
 if (!connectionString) {
-  throw new Error("DATABASE_URL is not defined in environment variables!");
+  throw new Error("SUPABASE_URL is not defined in environment variables!");
 }
 
 
